@@ -2,30 +2,45 @@
 //Test Results : All available test cases passed
 class Result
 {
-    /*
-     * Complete the 'countAffordablePairs' function below.
-     *
-     * The function is expected to return an INTEGER.
-     * The function accepts following parameters:
-     *  1. INTEGER_ARRAY prices
-     *  2. INTEGER budget
-     */
-
     public static int countAffordablePairs(List<int> prices, int budget)
     {
         int count = 0;
-        for (int i = 0; i < prices.Count; i++)
+        int left = 0;
+        int right = prices.Count - 1;
+
+        while (left < right)
         {
-            for (int j = i + 1; j < prices.Count; j++)
+            if (prices[left] + prices[right] <= budget)
             {
-                if (prices[i] + prices[j] <= budget)
-                {
-                    count++;
-                }
+                count += (right - left);
+                left++;
+            }
+            else
+            {
+                right--;
             }
         }
+
         return count;
     }
+    //Time complexity: O(n)
+
+    //public static int countAffordablePairs(List<int> prices, int budget)
+    //{
+    //    int count = 0;
+    //    for (int i = 0; i < prices.Count; i++)
+    //    {
+    //        for (int j = i + 1; j < prices.Count; j++)
+    //        {
+    //            if (prices[i] + prices[j] <= budget)
+    //            {
+    //                count++;
+    //            }
+    //        }
+    //    }
+    //    return count;
+    //}
+    //Time complexity: O(n²)
 }
 class Solution
 {

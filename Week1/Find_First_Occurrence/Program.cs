@@ -2,15 +2,6 @@
 //Test Results : All available test cases passed
 class Result
 {
-    /*
-     * Complete the 'findFirstOccurrence' function below.
-     *
-     * The function is expected to return an INTEGER.
-     * The function accepts following parameters:
-     *  1. INTEGER_ARRAY nums
-     *  2. INTEGER target
-     */
-
     public static int findFirstOccurrence(List<int> nums, int target)
     {
         return find(nums, 0, nums.Count - 1, target);

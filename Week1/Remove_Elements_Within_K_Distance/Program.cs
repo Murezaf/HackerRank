@@ -2,33 +2,30 @@
 //Test Results : All available test cases passed
 class Result
 {
-    /*
-     * Complete the 'debounceTimestamps' function below.
-     *
-     * The function is expected to return an INTEGER.
-     * The function accepts following parameters:
-     *  1. INTEGER_ARRAY timestamps
-     *  2. INTEGER K
-     */
-
+    // In-place removal using two-pointer.
+    // O(n) time, O(1) extra space.
     public static int debounceTimestamps(List<int> timestamps, int K)
     {
-        int i = 1;
-        int temp = 0;
-        while (i < timestamps.Count)
+        if (timestamps.Count == 0)
+            return 0;
+
+        int left = 0;
+        for (int right = 1; right < timestamps.Count; right++)
         {
-            temp = timestamps[i] - timestamps[i - 1];
-            if (temp >= K)
+            if (timestamps[right] - timestamps[left] >= K)
             {
-                i++;
-            }
-            else
-            {
-                timestamps.RemoveAt(i);
+                left++;
+                timestamps[left] = timestamps[right];
             }
         }
-        return timestamps.Count;
+        return ++left;//First add one to left, then return it(return left++; is opposite: first return then add one)
+        /*
+        left++;
+        return left;
+        */
+        //Our result list will be from index 0 to index 'left'
     }
+
 }
 
 class Solution

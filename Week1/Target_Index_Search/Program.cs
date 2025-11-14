@@ -2,21 +2,12 @@
 //Test Results : All available test cases passed
 class Result
 {
-    /*
-     * Complete the 'binarySearch' function below.
-     *
-     * The function is expected to return an INTEGER.
-     * The function accepts following parameters:
-     *  1. INTEGER_ARRAY nums
-     *  2. INTEGER target
-     */
-
     public static int binarySearch(List<int> nums, int target)
     {
-        return search(nums, 0, nums.Count - 1, target);
+        return search(nums, 0, nums.Count - 1, target); 
     }
 
-    private static int search(List<int> nums, int low, int high, int target)
+    private static int search(List<int> nums, int low, int high, int target)//To avoid losing the first string, we created this method with low and high.(We need indexes for the very first string at the end.)
     {
         if (low > high)
             return -1;

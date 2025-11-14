@@ -2,13 +2,6 @@
 //Test Results : All available test cases passed
 class Result
 {
-    /*
-     * Complete the 'countResponseTimeRegressions' function below.
-     *
-     * The function is expected to return an INTEGER.
-     * The function accepts INTEGER_ARRAY responseTimes as parameter.
-     */
-
     public static int countResponseTimeRegressions(List<int> responseTimes)
     {
         if (responseTimes.Count <= 0)

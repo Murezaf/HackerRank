@@ -2,18 +2,8 @@
 //Test Results : All available test cases passed
 class Result
 {
-    /*
-     * Complete the 'findTaskPairForSlot' function below.
-     *
-     * The function is expected to return an INTEGER_ARRAY.
-     * The function accepts following parameters:
-     *  1. INTEGER_ARRAY taskDurations
-     *  2. INTEGER slotLength
-     */
-
     public static List<int> findTaskPairForSlot(List<int> taskDurations, int slotLength)
     {
-        List<int> result = new List<int>();
         Dictionary<int, int> nums = new Dictionary<int, int>();
         int temp = 0;
         for (int i = 0; i < taskDurations.Count; i++)
@@ -22,18 +12,14 @@ class Result
             if (nums.ContainsKey(temp))
             {
                 nums.TryGetValue(temp, out int j);
-                result.Add(j);
-                result.Add(i);
-                return result;
+                return new List<int>() { j, i };
             }
             else
             {
                 nums[taskDurations[i]] = i;
             }
         }
-        result.Add(-1);
-        result.Add(-1);
-        return result;
+        return new List<int>() { -1, -1 };
     }
 }
 

@@ -60,15 +60,6 @@ class SinglyLinkedListPrintHelepr
 
 class Result
 {
-    /*
-     * Complete the 'removeKthNodeFromEnd' function below.
-     *
-     * The function is expected to return an INTEGER_SINGLY_LINKED_LIST.
-     * The function accepts following parameters:
-     *  1. INTEGER_SINGLY_LINKED_LIST head
-     *  2. INTEGER k
-     */
-
     public static SinglyLinkedListNode removeKthNodeFromEnd(SinglyLinkedListNode head, int k)
     {
         SinglyLinkedListNode current = head;
@@ -81,11 +72,11 @@ class Result
 
         if (length == 0)
         { return null; }
+        if(k >= length)//Wrong info given(index out of range) => no change
+        { return head; }
         int index = length - k - 1;
         current = head;
 
-        if (index < 0)
-        { return head; }
         if (index == 0)
         {
             return head.next;

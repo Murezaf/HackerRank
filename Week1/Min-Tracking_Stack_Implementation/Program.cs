@@ -1,14 +1,7 @@
 ﻿//Q9
 //Test Results : All available test cases passed
-//Chat GPT was used to implement the function getMin in O(1)
 class Result
 {
-    /*
-     * Complete the 'processCouponStackOperations' function below.
-     *
-     * The function is expected to return an INTEGER_ARRAY.
-     * The function accepts STRING_ARRAY operations as parameter.
-     */
     public static List<int> processCouponStackOperations(List<string> operations)
     {
         Stack s = new Stack();
@@ -24,12 +17,13 @@ class Result
             { result.Add(s.top()); }
             else if (operation.Contains("push"))
             {
-                string[] op_origins = operation.Split(" ");
-                s.push(int.Parse(op_origins[1]));
+                string[] operationparts = operation.Split(" ");
+                s.push(int.Parse(operationparts[1]));
             }
         }
         return result;
     }
+
     public class Stack
     {
         public List<int> minStack { get; set; }
@@ -40,6 +34,7 @@ class Result
             minStack = new List<int>();
             mainStack = new List<int>();
         }
+
         public int top()
         {
             int value = mainStack[mainStack.Count - 1];
@@ -68,10 +63,9 @@ class Result
 
         public int getMin()
         {
-            return minStack[minStack.Count() - 1];
+            return minStack[minStack.Count() - 1];//minStack[minStack.Count() - 1] == Minimum value so far
         }
     }
-
 }
 
 class Solution

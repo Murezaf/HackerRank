@@ -2,23 +2,14 @@
 //Test Results : All available test cases passed
 class Result
 {
-
-    /*
-     * Complete the 'isAlphabeticPalindrome' function below.
-     *
-     * The function is expected to return a BOOLEAN.
-     * The function accepts STRING code as parameter.
-     */
     public static bool isAlphabeticPalindrome(string code)
     {
         List<char> letters = new List<char>();
 
-        foreach (char c in code)
+        for(int i = 0; i < code.Length; i++)
         {
-            if (char.IsLetter(c))
-            {
-                letters.Add(char.ToLower(c));
-            }
+            if(char.IsLetter(code[i]))
+                letters.Add(code[i]);
         }
 
         int left = 0;
