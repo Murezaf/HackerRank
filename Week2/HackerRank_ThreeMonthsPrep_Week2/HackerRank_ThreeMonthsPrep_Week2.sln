@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mars_Exploration", "Mars_Exploration\Mars_Exploration.csproj", "{299A0C71-E1E2-4DF5-A115-7DE67F349353}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pangrams", "Pangrams\Pangrams.csproj", "{22F4B747-D80E-48A4-90BB-0B093983284E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Counting_Valleys", "Counting_Valleys\Counting_Valleys.csproj", "{3DFC1AD1-FA2F-46D4-AFB5-C126A28450F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diagonal_Difference", "Diagonal_Difference\Diagonal_Difference.csproj", "{E5798339-9347-40F3-B619-9D1FBCDFA18B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flipping_bits", "Flipping_bits\Flipping_bits.csproj", "{39AAB688-1AE9-4E1F-8EB2-D18C724334BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grading_Students", "Grading_Students\Grading_Students.csproj", "{5837C087-D7E3-4F2A-BAC4-43DD8008E200}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lonely_Integer", "Lonely_Integer\Lonely_Integer.csproj", "{83984DA8-F298-4AEF-BFB5-A057842A433F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{299A0C71-E1E2-4DF5-A115-7DE67F349353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{299A0C71-E1E2-4DF5-A115-7DE67F349353}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{299A0C71-E1E2-4DF5-A115-7DE67F349353}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{299A0C71-E1E2-4DF5-A115-7DE67F349353}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22F4B747-D80E-48A4-90BB-0B093983284E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22F4B747-D80E-48A4-90BB-0B093983284E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22F4B747-D80E-48A4-90BB-0B093983284E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22F4B747-D80E-48A4-90BB-0B093983284E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DFC1AD1-FA2F-46D4-AFB5-C126A28450F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DFC1AD1-FA2F-46D4-AFB5-C126A28450F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DFC1AD1-FA2F-46D4-AFB5-C126A28450F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DFC1AD1-FA2F-46D4-AFB5-C126A28450F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5798339-9347-40F3-B619-9D1FBCDFA18B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5798339-9347-40F3-B619-9D1FBCDFA18B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5798339-9347-40F3-B619-9D1FBCDFA18B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5798339-9347-40F3-B619-9D1FBCDFA18B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39AAB688-1AE9-4E1F-8EB2-D18C724334BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39AAB688-1AE9-4E1F-8EB2-D18C724334BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39AAB688-1AE9-4E1F-8EB2-D18C724334BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39AAB688-1AE9-4E1F-8EB2-D18C724334BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5837C087-D7E3-4F2A-BAC4-43DD8008E200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5837C087-D7E3-4F2A-BAC4-43DD8008E200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5837C087-D7E3-4F2A-BAC4-43DD8008E200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5837C087-D7E3-4F2A-BAC4-43DD8008E200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83984DA8-F298-4AEF-BFB5-A057842A433F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83984DA8-F298-4AEF-BFB5-A057842A433F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83984DA8-F298-4AEF-BFB5-A057842A433F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83984DA8-F298-4AEF-BFB5-A057842A433F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1884E8E2-D0EB-412B-8778-F4480FC83190}
+	EndGlobalSection
+EndGlobal
