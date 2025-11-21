@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36518.9 d17.14
+VisualStudioVersion = 17.14.36518.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mars_Exploration", "Mars_Exploration\Mars_Exploration.csproj", "{299A0C71-E1E2-4DF5-A115-7DE67F349353}"
 EndProject
@@ -16,6 +16,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grading_Students", "Grading_Students\Grading_Students.csproj", "{5837C087-D7E3-4F2A-BAC4-43DD8008E200}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lonely_Integer", "Lonely_Integer\Lonely_Integer.csproj", "{83984DA8-F298-4AEF-BFB5-A057842A433F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Counting_Sort_1", "Counting_Sort_1\Counting_Sort_1.csproj", "{5FC4A6EC-4D7F-4A7D-9E22-4410C9E6D775}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mock_Test_Flipping_the_Matrix", "Mock_Test_Flipping_the_Matrix\Mock_Test_Flipping_the_Matrix.csproj", "{48AFC47D-DEA8-4311-B24D-0842357AA606}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{83984DA8-F298-4AEF-BFB5-A057842A433F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83984DA8-F298-4AEF-BFB5-A057842A433F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83984DA8-F298-4AEF-BFB5-A057842A433F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FC4A6EC-4D7F-4A7D-9E22-4410C9E6D775}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FC4A6EC-4D7F-4A7D-9E22-4410C9E6D775}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FC4A6EC-4D7F-4A7D-9E22-4410C9E6D775}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FC4A6EC-4D7F-4A7D-9E22-4410C9E6D775}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48AFC47D-DEA8-4311-B24D-0842357AA606}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48AFC47D-DEA8-4311-B24D-0842357AA606}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48AFC47D-DEA8-4311-B24D-0842357AA606}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48AFC47D-DEA8-4311-B24D-0842357AA606}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

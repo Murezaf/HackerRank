@@ -9,12 +9,15 @@
 
         for (int i = digits.Count; i >= 0; i--)
         {
+            if (n == 0)
+                break;
             if (n >= (long)Math.Pow(2, i))
             {
                 digits[i] = 1;
                 n -= (long)Math.Pow(2, i);
             }
         }
+
         for (int i = 0; i < digits.Count; i++)
         {
             if (digits[i] == 1)
@@ -22,14 +25,15 @@
             else
                 digits[i] = 1;
         }
+
         for (int i = 0; i < digits.Count; i++)
         {
             if (digits[i] == 1)
                 result += (long)Math.Pow(2, i);
         }
+
         return result;
     }
-
 }
 
 class Solution
