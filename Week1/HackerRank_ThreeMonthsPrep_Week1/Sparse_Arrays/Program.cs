@@ -11,8 +11,8 @@
             dictionary[s]++;
         }
 
-        foreach (string q in queries)
-            result.Add(dictionary.ContainsKey(q) ? dictionary[q] : 0);
+        foreach (string query in queries)
+            result.Add(dictionary.ContainsKey(query) ? dictionary[query] : 0);
 
         return result;
     }

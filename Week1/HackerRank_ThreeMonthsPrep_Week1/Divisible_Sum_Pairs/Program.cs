@@ -2,36 +2,35 @@
 {
     public static int divisibleSumPairs(int n, int k, List<int> ar)
     {
-        int[] remainders = new int[k];
-        int count = 0;
-        for (int i = 0; i < n; i++) //remainders[i] = the number of elements in ar, which their remainder when divided by k is i
+        int[] remainders = new int[k]; //remainders[i] stores how many elements in 'ar' have a remainder of 'i' in dividing by k
 
-        {
-            int remainder = ar[i] % k;
-            remainders[remainder]++;
-        }
+        foreach (int number in ar)
+            remainders[number % k]++;
 
-        count += remainders[0] * (remainders[0] - 1) / 2; //they make k with eachother(among their selves) and not with other numbers with another remainders. for example: 15&5 for k = 5 and they both have 0 as their remainder
+        int pairs = 0;
+        pairs += CombinationCount(remainders[0]); //All numbers with remainder 0 can pair with each other
 
-        if (k % 2 != 0)
-        {
-            for (int i = 1; i <= k / 2; i++)
-            {
-                if (i != k - i)
-                    count += remainders[i] * remainders[k - i]; //each pair of elements with remainders[i] and remainders[k - i] counts for our target
-            }
-        }
+        int limit = k / 2;
 
         if (k % 2 == 0)
         {
-            for (int i = 1; i < k / 2; i++)
-            {
-                if (i != k - i)
-                    count += remainders[i] * remainders[k - i];
-            }
-            count += remainders[k / 2] * (remainders[k / 2] - 1) / 2; //exactly like remainder 0 we had before: they make k with eachother(among their selves) and not with other numbers with another remainders. for example: 4&12 for k = 8 and they both have 4 as their remainder
+            for (int r = 1; r < limit; r++)
+                pairs += remainders[r] * remainders[k - r];
+
+            pairs += CombinationCount(remainders[limit]); //For even k, when remainder is k/2, it can only pair with each other
         }
-        return count;
+        else
+        {
+            for (int r = 1; r <= limit; r++)
+                pairs += remainders[r] * remainders[k - r];
+        }
+
+        return pairs;
+    }
+
+    private static int CombinationCount(int count)
+    {
+        return count * (count - 1) / 2;
     }
     // Time Complexity: O(n + k)
     // - O(n): find and counting remainders in the first loop
