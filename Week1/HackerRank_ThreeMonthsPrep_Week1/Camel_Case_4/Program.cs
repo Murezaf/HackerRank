@@ -2,91 +2,98 @@
 {
     public static string Split_or_Create(string input)
     {
-        string[] operation_parts = input.Split(';');
-        string result = "";
-        if (operation_parts[0] == "S")
+        string[] parts = input.Split(';');
+        string op = parts[0];
+        string type = parts[1];
+        string content = parts[2];
+
+        if (op == "S")
+            return SplitCamel(content, type);
+        else
+            return CombineCamel(content, type);
+    }
+
+    private static string SplitCamel(string text, string type)
+    {
+        char[] chars = text.ToCharArray(); int length = chars.Length; char character;
+
+        if (type == "M")
+            length -= 2;
+
+        List<char> result = new List<char>();
+
+        for (int i = 0; i < length; i++)
         {
-            result += operation_parts[2][0].ToString().ToLower();
-            if (operation_parts[1] == "M")
+            character = chars[i];
+            if (character >= 'A' && character <= 'Z')
             {
-                for (int i = 1; i < operation_parts[2].Length - 2; i++)
+                if (i == 0)
+                    result.Add((char)(character + 32));
+                else
                 {
-                    if (operation_parts[2][i].ToString() != operation_parts[2][i].ToString().ToLower())
-                    {
-                        result += " ";
-                        result += operation_parts[2][i].ToString().ToLower();
-                    }
-                    else
-                    {
-                        result += operation_parts[2][i];
-                    }
+                    result.Add(' ');
+                    result.Add((char)(character + 32));
                 }
             }
             else
             {
-                for (int i = 1; i < operation_parts[2].Length; i++)
-                {
-                    if (operation_parts[2][i].ToString() != operation_parts[2][i].ToString().ToLower())
-                    {
-                        result += " ";
-                        result += operation_parts[2][i].ToString().ToLower();
-                    }
-                    else
-                    {
-                        result += operation_parts[2][i];
-                    }
-                }
+                result.Add(character);
             }
         }
-        if (operation_parts[0] == "C")
-        {
-            string[] words = operation_parts[2].Split(" ");
-            if (operation_parts[1] == "M")
-            {
-                result += words[0];
-                for (int i = 1; i < words.Length; i++)
-                {
-                    result += words[i][0].ToString().ToUpper();
-                    result += words[i].ToString().Substring(1);
-                }
-                result += "()";
-            }
-            else if (operation_parts[1] == "C")
-            {
-                for (int i = 0; i < words.Length; i++)
-                {
-                    result += words[i][0].ToString().ToUpper();
-                    result += words[i].ToString().Substring(1);
-                }
-            }
-            else if (operation_parts[1] == "V")
-            {
-                result += words[0];
-                for (int i = 1; i < words.Length; i++)
-                {
-                    result += words[i][0].ToString().ToUpper();
-                    result += words[i].ToString().Substring(1);
-                }
-            }
-        }
-        return result;
-    }
-}
 
-public class Solution
-{
-    static void Main(String[] args)
+        return new string(result.ToArray());
+    }
+
+    private static string CombineCamel(string text, string type)
     {
-        string input = Console.ReadLine();
-        List<string> result = new List<string>();
-        while (input != null)
+        char[] chars = text.ToCharArray();
+        List<char> result = new List<char>();
+
+        int index = 0;
+        while (index < chars.Length)
         {
-            result.Add(Result.Split_or_Create(input));
-            input = Console.ReadLine();
+            char character = chars[index];
+            if (character == ' ')
+            {
+                index++;
+                character = chars[index];
+                result.Add((char)(character - 32));
+            }
+            else
+            {
+                result.Add(character);
+            }
+            index++;
         }
-        for (int i = 0; i < result.Count; i++)
+
+        if (type == "M")
         {
-            Console.WriteLine(result[i]);
+            result.Add('(');
+            result.Add(')');
+        }
+        else if (type == "C")
+        {
+            result[0] = (char)(result[0] - 32);
+        }
+
+        return new string(result.ToArray());
+    }
+
+    public class Solution
+    {
+        static void Main(String[] args)
+        {
+            string input = Console.ReadLine();
+            List<string> result = new List<string>();
+            while (input != null)
+            {
+                result.Add(Result.Split_or_Create(input));
+                input = Console.ReadLine();
+            }
+            for (int i = 0; i < result.Count; i++)
+            {
+                Console.WriteLine(result[i]);
+            }
         }
     }
 }
