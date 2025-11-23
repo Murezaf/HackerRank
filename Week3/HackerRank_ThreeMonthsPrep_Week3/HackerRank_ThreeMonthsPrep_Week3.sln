@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36518.9 d17.14
+VisualStudioVersion = 17.14.36518.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permuting_Two_Arrays", "Permuting_Two_Arrays\Permuting_Two_Arrays.csproj", "{3DF694C7-49F5-4CF8-B3F3-169293528F37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subarray_Division_2", "Subarray_Division_2\Subarray_Division_2.csproj", "{D3A174BD-5B54-4B03-877A-26E3635825F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XOR_Strings_3", "XOR_Strings_3\XOR_Strings_3.csproj", "{C0848BF6-F80D-4C73-B55B-177FC020F298}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{3DF694C7-49F5-4CF8-B3F3-169293528F37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DF694C7-49F5-4CF8-B3F3-169293528F37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DF694C7-49F5-4CF8-B3F3-169293528F37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3A174BD-5B54-4B03-877A-26E3635825F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3A174BD-5B54-4B03-877A-26E3635825F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3A174BD-5B54-4B03-877A-26E3635825F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3A174BD-5B54-4B03-877A-26E3635825F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0848BF6-F80D-4C73-B55B-177FC020F298}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0848BF6-F80D-4C73-B55B-177FC020F298}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0848BF6-F80D-4C73-B55B-177FC020F298}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0848BF6-F80D-4C73-B55B-177FC020F298}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
