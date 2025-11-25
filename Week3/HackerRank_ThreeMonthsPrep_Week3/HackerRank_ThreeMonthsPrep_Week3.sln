@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subarray_Division_2", "Suba
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XOR_Strings_3", "XOR_Strings_3\XOR_Strings_3.csproj", "{C0848BF6-F80D-4C73-B55B-177FC020F298}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sales_by_Match", "Sales_by_Match\Sales_by_Match.csproj", "{CF6F83A2-18C2-4A88-9026-D84116E35186}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migratory_Birds", "Migratory_Birds\Migratory_Birds.csproj", "{2BAF9961-237B-457C-854D-AA371F12D987}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{C0848BF6-F80D-4C73-B55B-177FC020F298}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0848BF6-F80D-4C73-B55B-177FC020F298}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0848BF6-F80D-4C73-B55B-177FC020F298}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF6F83A2-18C2-4A88-9026-D84116E35186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF6F83A2-18C2-4A88-9026-D84116E35186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF6F83A2-18C2-4A88-9026-D84116E35186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF6F83A2-18C2-4A88-9026-D84116E35186}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BAF9961-237B-457C-854D-AA371F12D987}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BAF9961-237B-457C-854D-AA371F12D987}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BAF9961-237B-457C-854D-AA371F12D987}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BAF9961-237B-457C-854D-AA371F12D987}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

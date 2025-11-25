@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Solution
+﻿namespace Solution
 {
     public class Result
     {
@@ -8,7 +6,11 @@ namespace Solution
         {
             char[] result = new char[first.Length];
             for (int i = 0; i < first.Length; i++)
-                result[i] = (first[i] == second[i]) ? '0' : '1';
+                if(first[i] == second[i])
+                    result[i] = '0';
+                else
+                    result[i] = '1';
+                //result[i] = (first[i] == second[i]) ? '0' : '1';
             return new string(result);
         }
     }
