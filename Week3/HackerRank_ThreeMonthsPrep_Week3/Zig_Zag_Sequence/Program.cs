@@ -1,37 +1,37 @@
 ﻿public class Result
 {
-    public static void findZigZagSequence(List<int> a, int n)
+    public static void findZigZagSequence(List<int> list, int n)
     {
-        a.Sort();
+        list.Sort();
 
         //int mid = ((n + 1) / 2);
         int mid = ((n + 1) / 2 - 1);
         
-        int temp = a[mid];
-        a[mid] = a[n-1];
-        a[n-1] = temp;
+        int temp = list[mid];
+        list[mid] = list[n-1];
+        list[n-1] = temp;
 
-        int st = mid + 1;
-        //int ed = n - 1;
-        int ed = n - 2;
+        int first_pointer = mid + 1;
+        //int second_pointer = n - 1;
+        int second_pointer = n - 2;
 
-        while (st <= ed)
+        while (first_pointer <= second_pointer)
         {
-            temp = a[st];
-            a[st] = a[ed];
-            a[ed] = temp;
+            temp = list[first_pointer];
+            list[first_pointer] = list[second_pointer];
+            list[second_pointer] = temp;
 
-            st++;
-            //ed++;
-            ed--;
+            first_pointer++;
+            //second_pointer++;
+            second_pointer--;
         }
 
         for (int i = 0; i < n; i++)
         {
             if (i == n - 1)
-                Console.Write(a[i]);
+                Console.Write(list[i]);
             else
-                Console.Write(a[i] + " ");
+                Console.Write(list[i] + " ");
         }
     }
 }
@@ -46,13 +46,13 @@ class Solution
         {
             int n = int.Parse(Console.ReadLine());
 
-            List<int> a = new List<int>();
+            List<int> list = new List<int>();
             string[] parts = Console.ReadLine().Split(' ');
 
             for (int i = 0; i < n; i++)
-                a.Add(int.Parse(parts[i]));
+                list.Add(int.Parse(parts[i]));
 
-            Result.findZigZagSequence(a, n);
+            Result.findZigZagSequence(list, n);
         }
     }
 }
