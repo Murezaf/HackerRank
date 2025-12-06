@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Left_Rotation", "Left_Rotat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Number_Line_Jumps", "Number_Line_Jumps\Number_Line_Jumps.csproj", "{B7F6CD9C-FE03-4206-A115-70F6F5AC7238}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Separate_the_Numbers", "Separate_the_Numbers\Separate_the_Numbers.csproj", "{E1AB4EF4-743F-4119-B1CC-C14527D1955A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Closest_Numbers", "Closest_Numbers\Closest_Numbers.csproj", "{93706D11-E522-4DC4-835B-CEA76DE30E48}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{B7F6CD9C-FE03-4206-A115-70F6F5AC7238}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7F6CD9C-FE03-4206-A115-70F6F5AC7238}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7F6CD9C-FE03-4206-A115-70F6F5AC7238}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1AB4EF4-743F-4119-B1CC-C14527D1955A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1AB4EF4-743F-4119-B1CC-C14527D1955A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1AB4EF4-743F-4119-B1CC-C14527D1955A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1AB4EF4-743F-4119-B1CC-C14527D1955A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93706D11-E522-4DC4-835B-CEA76DE30E48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93706D11-E522-4DC4-835B-CEA76DE30E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93706D11-E522-4DC4-835B-CEA76DE30E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93706D11-E522-4DC4-835B-CEA76DE30E48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
