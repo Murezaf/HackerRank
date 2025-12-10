@@ -2,16 +2,15 @@
 {
     public static int marsExploration(string s)
     {
-        int numberof_changes = 0; 
+        int numberOfChanges = 0; string pattern = "SOS";
+
         for (int i = 0; i < s.Length; i++)
         {
-            if((i % 3  == 0 || i % 3 == 2) && s[i] != 'S')
-                numberof_changes++;
-            if (i % 3 == 1 && s[i] != 'O')
-                numberof_changes++;
+            if (s[i] != pattern[i % 3])
+                numberOfChanges++;
         }
 
-        return numberof_changes;
+        return numberOfChanges;
     }
 }
 

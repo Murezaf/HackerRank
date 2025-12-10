@@ -2,16 +2,14 @@
 {
     public static List<int> countingSort(List<int> arr)
     {
-        List<int> numberof_occurs = new List<int>();
-        for (int i = 0; i < 100; i++)
-            numberof_occurs.Add(0);
+        int[] occurrenceCount = new int[100];
 
         for (int i = 0; i < arr.Count; i++)
         {
-            numberof_occurs[arr[i]]++;
+            occurrenceCount[arr[i]]++;
         }
 
-        return numberof_occurs;
+        return occurrenceCount.ToList();
     }
 }
 

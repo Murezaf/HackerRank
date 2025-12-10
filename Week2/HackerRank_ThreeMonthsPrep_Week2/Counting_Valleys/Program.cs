@@ -2,30 +2,29 @@
 {
     public static int countingValleys(int steps, string path)
     {
-        int count = 0;
-        int hight = 0;
-        bool under_sea = false;
+        int count = 0; int hight = 0; bool underSea = false;
+
         for (int i = 0; i < steps; i++)
         {
             if (path[i] == 'U')
             {
                 hight += 1;
-                if (under_sea == true && hight >= 0)
+                if (underSea == true && hight >= 0)
                 {
                     count++;
-                    under_sea = false;
+                    underSea = false;
                 }
             }
-            if (path[i] == 'D')
+
+            else
             {
                 hight -= 1;
                 if (hight < 0)
-                    under_sea = true;
+                    underSea = true;
             }
         }
         return count;
     }
-
 }
 
 class Solution

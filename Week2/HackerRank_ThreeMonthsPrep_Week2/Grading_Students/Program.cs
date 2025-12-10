@@ -2,20 +2,29 @@
 {
     public static List<int> gradingStudents(List<int> grades)
     {
+        List<int> finalGrades = new List<int>();
+
         for (int i = 0; i < grades.Count; i++)
         {
             if (grades[i] >= 38)
             {
-                int temp = grades[i] % 5;
-                int next_5multiply = grades[i] + (5 - temp);
-                if (next_5multiply - grades[i] < 3)
-                    grades[i] = next_5multiply;
+                finalGrades.Add(UpdateGrade(grades[i]));
             }
+            else
+                finalGrades.Add(grades[i]);
         }
-        return grades;
-
+        return finalGrades;
     }
 
+    public static int UpdateGrade(int grade)
+    {
+        int temp = grade % 5;
+        int nextMultipleOfFive = grade + (5 - temp);
+        if (nextMultipleOfFive - grade < 3)
+            grade = nextMultipleOfFive;
+
+        return grade;
+    }
 }
 
 class Solution
