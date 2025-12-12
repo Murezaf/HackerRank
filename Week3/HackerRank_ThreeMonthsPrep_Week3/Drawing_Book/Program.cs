@@ -2,37 +2,36 @@
 {
     public static int pageCount(int n, int p)
     {
-        int visible_page = 1; int middle = n / 2;
+        int visiblePage = 1; int middle = n / 2; int count = 0;
+
         if (p <= middle)
         {
-            int count_fromfront = 0;
-            while (p > visible_page)
+            while (p > visiblePage)
             {
-                visible_page += 2;
-                count_fromfront++;
+                visiblePage += 2;
+                count++;
             }
 
-            return count_fromfront;
+            return count;
         }
 
         else
         {
-            int count_fromback = 0;
             if (n % 2 == 1)
-                visible_page = n - 1;
+                visiblePage = n - 1;
             else
             {
-                visible_page = n;
+                visiblePage = n;
             }
             //According to the shape of the book given in the question
 
-            while (p < visible_page)
+            while (p < visiblePage)
             {
-                visible_page -= 2;
-                count_fromback++;
+                visiblePage -= 2;
+                count++;
             }
 
-            return count_fromback;
+            return count;
         }
     }
 }

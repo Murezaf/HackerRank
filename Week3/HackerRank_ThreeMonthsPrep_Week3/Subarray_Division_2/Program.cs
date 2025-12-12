@@ -7,6 +7,7 @@
         {
             sum += s[i];
         }
+
         if (sum == d)
             result++;
 

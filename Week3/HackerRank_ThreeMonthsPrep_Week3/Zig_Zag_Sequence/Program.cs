@@ -1,4 +1,5 @@
-﻿public class Result
+﻿//This was a debugging challenge: commented lines had logical issues during debugging process and were corrected in their following lines.
+public class Result
 {
     public static void findZigZagSequence(List<int> list, int n)
     {
@@ -11,19 +12,19 @@
         list[mid] = list[n-1];
         list[n-1] = temp;
 
-        int first_pointer = mid + 1;
+        int firstPointer = mid + 1;
         //int second_pointer = n - 1;
-        int second_pointer = n - 2;
+        int secondPointer = n - 2;
 
-        while (first_pointer <= second_pointer)
+        while (firstPointer <= secondPointer)
         {
-            temp = list[first_pointer];
-            list[first_pointer] = list[second_pointer];
-            list[second_pointer] = temp;
+            temp = list[firstPointer];
+            list[firstPointer] = list[secondPointer];
+            list[secondPointer] = temp;
 
-            first_pointer++;
-            //second_pointer++;
-            second_pointer--;
+            firstPointer++;
+            //secondPointer++;
+            secondPointer--;
         }
 
         for (int i = 0; i < n; i++)

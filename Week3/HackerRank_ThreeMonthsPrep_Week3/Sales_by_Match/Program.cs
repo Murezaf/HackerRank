@@ -2,16 +2,19 @@
 {
     public static int sockMerchant(int n, List<int> ar)
     {
-        Dictionary<int, int> numberof_eachsock = new Dictionary<int, int>(); int result = 0;    
+        Dictionary<int, int> countPerSock = new Dictionary<int, int>(); int result = 0;    
+     
         for (int i = 0; i < ar.Count; i++)
         {
-            if(numberof_eachsock.ContainsKey(ar[i]))
-                numberof_eachsock[ar[i]]++;
+            if(countPerSock.ContainsKey(ar[i]))
+                countPerSock[ar[i]]++;
             else
-                numberof_eachsock[ar[i]] = 1;
+                countPerSock[ar[i]] = 1;
         }
-        foreach (int numberof_sock in numberof_eachsock.Values)
-            result += numberof_sock / 2;
+
+        foreach (int sockCount in countPerSock.Values)
+            result += sockCount / 2;
+
         return result;
     }
 }

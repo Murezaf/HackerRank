@@ -2,32 +2,36 @@
 {
     public static int migratoryBirds(List<int> arr)
     {
-        Dictionary<int, int> numberof_eachbird = new Dictionary<int, int>();
+        Dictionary<int, int> countPerBird = new Dictionary<int, int>();
+ 
         for (int i = 0; i < arr.Count; i++)
         {
-            if(numberof_eachbird.ContainsKey(arr[i]))
-                numberof_eachbird[arr[i]]++;
+            if(countPerBird.ContainsKey(arr[i]))
+                countPerBird[arr[i]]++;
             else
-                numberof_eachbird[arr[i]] = 1;
+                countPerBird[arr[i]] = 1;
         }
 
-        int max_numberof_eachbird = 0;
-        foreach(int value in numberof_eachbird.Values)
+        int maxCountPerBird = 0;
+        foreach(int value in countPerBird.Values)
         {
-            if (value > max_numberof_eachbird)
-                max_numberof_eachbird = value;
+            if (value > maxCountPerBird)
+                maxCountPerBird = value;
         }
-        //int max_numberof_eachbird = count.Values.Max();
+        //int max_numberof_eachbird = countPerBird.Values.Max();
 
-        int min_idof_birds = int.MaxValue;
-        foreach(int key in numberof_eachbird.Keys)
+        int minIdOfBirds = int.MaxValue;
+        foreach(int key in countPerBird.Keys)
         {
-            if (key < min_idof_birds && numberof_eachbird[key] == max_numberof_eachbird)
-                min_idof_birds = key;
+            if (key < minIdOfBirds && countPerBird[key] == maxCountPerBird)
+                minIdOfBirds = key;
         }
-        return min_idof_birds;
-        //return numberof_eachbird
-        //    .Where(bird => bird.Value == max_numberof_eachbird)
+        //int minIdOfBirds = countPerBird.Keys.Min();
+
+        return minIdOfBirds;
+
+        //return countPerBird
+        //    .Where(bird => bird.Value == maxCountPerBird)
         //    .Select(bird => bird.Key)
         //    .Min();
     }
