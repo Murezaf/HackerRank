@@ -2,24 +2,53 @@
 {
     public static string pangrams(string s)
     {
-        bool[] seen = new bool[26];
-        s = s.ToLower();
-        int lettersCount = 0;
+        HashSet<char> seenSet = new HashSet<char>(); s = s.ToLower();
 
-        foreach (char c in s)
+        foreach (char c in s.ToLower())
         {
             if (c >= 'a' && c <= 'z')
-            {
-                int index = c - 'a';
-                if (!seen[index])
-                {
-                    seen[index] = true;
-                    lettersCount++;
-                }
-            }
+                seenSet.Add(c);  
         }
-        return (lettersCount == 26) ? "pangram" : "not pangram";
+
+        return seenSet.Count == 26 ? "pangram" : "not pangram";
     }
+
+    //public static string pangrams(string s)
+    //{
+    //    Dictionary<char, bool> everSeen = new Dictionary<char, bool>(); s = s.ToLower();
+
+    //    for (int i = 0; i < s.Length; i++)
+    //    {
+    //        if (s[i] >= 'a' && s[i] <= 'z')
+    //        {
+    //            if (!everSeen.ContainsKey(s[i]))
+    //                everSeen[s[i]] = true;
+    //        }
+    //    }
+
+    //    return (everSeen.Keys.Count == 26) ? "pangram" : "not pangram";
+    //}
+
+    //public static string pangrams(string s)
+    //{
+    //    bool[] everSeen = new bool[26]; s = s.ToLower(); int lettersCount = 0;
+
+    //    foreach (char c in s)
+    //    {
+    //        if (c >= 'a' && c <= 'z')
+    //        {
+    //            int index = c - 'a';
+
+    //            if (!everSeen[index])
+    //            {
+    //                everSeen[index] = true;
+    //                lettersCount++;
+    //            }
+    //        }
+    //    }
+
+    //    return (lettersCount == 26) ? "pangram" : "not pangram";
+    //}
 }
 
 class Solution

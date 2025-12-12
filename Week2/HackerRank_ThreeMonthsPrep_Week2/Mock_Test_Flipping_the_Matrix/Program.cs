@@ -14,11 +14,29 @@
                 int c = matrix[n - i - 1][j];
                 int d = matrix[n - i - 1][n - j - 1];
 
-                maxSum += Math.Max(Math.Max(a, b), Math.Max(c, d)); //max of 4 elements(Math.Max only works for two elements)
-                // Because of unlimited reverses, each cell in the top-left of matrix can swap with its three symmetric counterparts.
+                //maxSum += Math.Max(Math.Max(a, b), Math.Max(c, d)); //max of 4 elements(Math.Max only works for two elements)
+                //maxSum += new int[4] { a, b, c, d }.Max();
+                maxSum += GetMax(a, b, c, d);
+
+                //Because of unlimited reverses, each cell in the top-left of matrix can swap with its three symmetric counterparts.
             }
         }
         return maxSum;
+    }
+
+    public static int GetMax(params int[] numbers)
+    {
+        //return numbers.Max();
+        
+        int max = -1 * int.MaxValue;
+        
+        foreach (int number in numbers)
+        {
+            if(number > max)
+                max = number;
+        }
+
+        return max;
     }
 }
 

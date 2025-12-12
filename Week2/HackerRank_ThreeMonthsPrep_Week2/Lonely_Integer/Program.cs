@@ -1,5 +1,6 @@
 ﻿class Result
 {
+    //XOR
     public static int lonelyinteger(List<int> a)
     {
         int result = 0;
@@ -7,6 +8,22 @@
             result ^= num;
         return result;
     }
+
+    //HashSet
+    //public static int lonelyinteger(List<int> a)
+    //{
+    //    HashSet<int> set = new HashSet<int>();
+
+    //    for (int i = 0; i < a.Count; i++)
+    //    {
+    //        if (!set.Add(a[i])) //Add() function will return false if num already exists and if it doesn't exist, it will add the num to set and return true.
+    //            set.Remove(a[i]);
+    //    }
+
+    //    return set.First();
+    //}
+
+    //Dictionary
     // public static int lonelyinteger(List<int> a)
     // {
     //     Dictionary<int, bool> nums = new Dictionary<int, bool>();
