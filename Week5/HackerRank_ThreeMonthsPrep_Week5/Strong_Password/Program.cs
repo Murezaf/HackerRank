@@ -3,21 +3,47 @@
     public static int minimumNumber(int n, string password)
     {
         Dictionary<string, bool> conditions = new Dictionary<string, bool>(); int countCharacterNeed = 0;
-        List<char> specialCharacters = new List<char>() { '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '+' };
 
         for (int i = 0; i < n; i++)
         {
-            if (!conditions.ContainsKey("lowercase") && (password[i] >= 97 && password[i] <= 122))
-                conditions["lowercase"] = true;
+            if (conditions.Count == 4)
+                break;
 
-            else if (!conditions.ContainsKey("uppercase") && (password[i] >= 65 && password[i] <= 90))
-                conditions["uppercase"] = true;
+            if (!conditions.ContainsKey("lowercase"))
+            {
+                if (CheckLowerCase(password[i]))
+                {
+                    conditions["lowercase"] = true;
+                    continue;
+                }
+            }
 
-            else if (!conditions.ContainsKey("numbers") && int.TryParse(password[i].ToString(), out int x))
-                conditions["number"] = true;
+            if (!conditions.ContainsKey("uppercase"))
+            {
+                if (CheckUpperCase(password[i]))
+                {
+                    conditions["uppercase"] = true;
+                    continue;
+                }
+            }
 
-            else if (!conditions.ContainsKey("specialcharacter") && specialCharacters.Contains(password[i]))
-                conditions["specialcharacter"] = true;
+            if (!conditions.ContainsKey("number"))
+            {
+                if (CheckNumber(password[i]))
+                {
+                    conditions["number"] = true;
+                    continue;
+                }
+            }
+
+            if (!conditions.ContainsKey("specialcharacter"))
+            {
+                if (CheckSpecialCharacter(password[i]))
+                {
+                    conditions["specialcharacter"] = true;
+                    continue;
+                }
+            }
         }
 
         countCharacterNeed = 4 - conditions.Count;
@@ -27,6 +53,32 @@
             countCharacterNeed += (6 - n);
 
         return countCharacterNeed;
+    }
+
+    static bool CheckLowerCase(char character)
+    {
+        if (character >= 97 && character <= 122)
+            return true;
+        return false;
+    }
+    public static bool CheckUpperCase(char character)
+    {
+        if (character >= 65 && character <= 90)
+            return true;
+        return false;
+    }
+    public static bool CheckNumber(char character)
+    {
+        if (int.TryParse(character.ToString(), out int x))
+            return true;
+        return false;
+    }
+    public static bool CheckSpecialCharacter(char character)
+    {
+        List<char> specialCharacters = new List<char>() { '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '+' };
+        if (specialCharacters.Contains(character))
+            return true;
+        return false;
     }
 }
 
