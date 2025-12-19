@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Missing_Numbers", "Missing_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smart_Number_2", "Smart_Number_2\Smart_Number_2.csproj", "{F7C8A593-9EC5-4F63-AAE0-9976AC67F703}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The_Full_Counting_Sort", "The_Full_Counting_Sort\The_Full_Counting_Sort.csproj", "{308D6997-2D6A-4F31-BF6E-6CF1B5F8B129}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grid_Challenge", "Grid_Challenge\Grid_Challenge.csproj", "{4E508A79-340E-491B-A90D-36DC01FBDE52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{F7C8A593-9EC5-4F63-AAE0-9976AC67F703}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7C8A593-9EC5-4F63-AAE0-9976AC67F703}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7C8A593-9EC5-4F63-AAE0-9976AC67F703}.Release|Any CPU.Build.0 = Release|Any CPU
+		{308D6997-2D6A-4F31-BF6E-6CF1B5F8B129}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{308D6997-2D6A-4F31-BF6E-6CF1B5F8B129}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{308D6997-2D6A-4F31-BF6E-6CF1B5F8B129}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{308D6997-2D6A-4F31-BF6E-6CF1B5F8B129}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E508A79-340E-491B-A90D-36DC01FBDE52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E508A79-340E-491B-A90D-36DC01FBDE52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E508A79-340E-491B-A90D-36DC01FBDE52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E508A79-340E-491B-A90D-36DC01FBDE52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
