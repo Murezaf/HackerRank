@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MisereـNim", "MisereـNim\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gaming_Array_1", "Gaming_Array_1\Gaming_Array_1.csproj", "{9C635373-744C-4C66-928C-55CD88C7DA13}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumـvsـXOR", "SumـvsـXOR\SumـvsـXOR.csproj", "{76A2A609-326C-4F3F-96A5-AFE1635575BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{9C635373-744C-4C66-928C-55CD88C7DA13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C635373-744C-4C66-928C-55CD88C7DA13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C635373-744C-4C66-928C-55CD88C7DA13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76A2A609-326C-4F3F-96A5-AFE1635575BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76A2A609-326C-4F3F-96A5-AFE1635575BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76A2A609-326C-4F3F-96A5-AFE1635575BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76A2A609-326C-4F3F-96A5-AFE1635575BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
