@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Counter_game", "Counter_gam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recursive_Digit_Sum", "Recursive_Digit_Sum\Recursive_Digit_Sum.csproj", "{70D03931-761F-4AC6-A0F3-B97C2CD0746A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forming_a_Magic_Square", "Forming_a_Magic_Square\Forming_a_Magic_Square.csproj", "{CB2D36B4-A9AF-4320-9563-4AD2DB0B3E1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mock_Test_Palindrome_Index", "Mock_Test_Palindrome_Index\Mock_Test_Palindrome_Index.csproj", "{D36C99B1-AC6D-45BF-A2FA-EFEED5836CE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{70D03931-761F-4AC6-A0F3-B97C2CD0746A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70D03931-761F-4AC6-A0F3-B97C2CD0746A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70D03931-761F-4AC6-A0F3-B97C2CD0746A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB2D36B4-A9AF-4320-9563-4AD2DB0B3E1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB2D36B4-A9AF-4320-9563-4AD2DB0B3E1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB2D36B4-A9AF-4320-9563-4AD2DB0B3E1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB2D36B4-A9AF-4320-9563-4AD2DB0B3E1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D36C99B1-AC6D-45BF-A2FA-EFEED5836CE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D36C99B1-AC6D-45BF-A2FA-EFEED5836CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D36C99B1-AC6D-45BF-A2FA-EFEED5836CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D36C99B1-AC6D-45BF-A2FA-EFEED5836CE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
