@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sherlock_and_the_Valid_Stri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Climbing_the_Leaderboard", "Climbing_the_Leaderboard\Climbing_the_Leaderboard.csproj", "{FAAD63D0-9C67-4F82-B863-003C5E8B1633}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverse_a_linked_list", "Reverse_a_linked_list\Reverse_a_linked_list.csproj", "{179A492C-8B57-46C3-AE7D-CF13471E8BD4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{FAAD63D0-9C67-4F82-B863-003C5E8B1633}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAAD63D0-9C67-4F82-B863-003C5E8B1633}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAAD63D0-9C67-4F82-B863-003C5E8B1633}.Release|Any CPU.Build.0 = Release|Any CPU
+		{179A492C-8B57-46C3-AE7D-CF13471E8BD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{179A492C-8B57-46C3-AE7D-CF13471E8BD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{179A492C-8B57-46C3-AE7D-CF13471E8BD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{179A492C-8B57-46C3-AE7D-CF13471E8BD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
