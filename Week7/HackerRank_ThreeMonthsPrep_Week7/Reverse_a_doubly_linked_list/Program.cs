@@ -80,7 +80,10 @@ class Result
 
     //        first = second;
     //        second = third;
-    //        third = third.next;
+            //if (third != null)
+            //{
+            //    third = third.next;
+            //}
     //    }
 
     //    return first;
