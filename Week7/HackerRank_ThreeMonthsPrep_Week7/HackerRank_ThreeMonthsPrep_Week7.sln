@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Climbing_the_Leaderboard", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverse_a_linked_list", "Reverse_a_linked_list\Reverse_a_linked_list.csproj", "{179A492C-8B57-46C3-AE7D-CF13471E8BD4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverse_a_doubly_linked_list", "Reverse_a_doubly_linked_list\Reverse_a_doubly_linked_list.csproj", "{AD4D5C9C-D623-4308-B048-16AC4CC6608B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{179A492C-8B57-46C3-AE7D-CF13471E8BD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{179A492C-8B57-46C3-AE7D-CF13471E8BD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{179A492C-8B57-46C3-AE7D-CF13471E8BD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD4D5C9C-D623-4308-B048-16AC4CC6608B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD4D5C9C-D623-4308-B048-16AC4CC6608B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD4D5C9C-D623-4308-B048-16AC4CC6608B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD4D5C9C-D623-4308-B048-16AC4CC6608B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
