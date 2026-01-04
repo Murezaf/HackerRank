@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverse_a_linked_list", "Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverse_a_doubly_linked_list", "Reverse_a_doubly_linked_list\Reverse_a_doubly_linked_list.csproj", "{AD4D5C9C-D623-4308-B048-16AC4CC6608B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insert_a_node_at_a_specific_position_in_a_linked_list", "Insert_a_node_at_a_specific_position_in_a_linked_list\Insert_a_node_at_a_specific_position_in_a_linked_list.csproj", "{169C96CB-7F05-4E7F-96CF-3CBB3834B0B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{AD4D5C9C-D623-4308-B048-16AC4CC6608B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD4D5C9C-D623-4308-B048-16AC4CC6608B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD4D5C9C-D623-4308-B048-16AC4CC6608B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{169C96CB-7F05-4E7F-96CF-3CBB3834B0B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{169C96CB-7F05-4E7F-96CF-3CBB3834B0B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{169C96CB-7F05-4E7F-96CF-3CBB3834B0B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{169C96CB-7F05-4E7F-96CF-3CBB3834B0B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
